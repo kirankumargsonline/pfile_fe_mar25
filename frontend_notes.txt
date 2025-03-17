@@ -1,0 +1,70 @@
+Bootstrap, Js and react notes 
+17/3/2025
+
+STEPS TO CREATE NEW GIT REPO
+
+1: Login to GitHub.
+2: Click on + on Top Right and Select New REPOSITORY.
+3: Enter the new Repo name
+4: Give a description
+5: Make repo public
+6: SELECT ADD README FILE checkbox.
+7: Click on create repository button.
+
+
+Command to download any public repo 
+git clone https://github.com/kirankumargsonline/pfile_fe_mar25
+
+Repo command copies(clones) from the server (cloud) to local machine
+
+Thus, We get a folder of the repo. 
+
+
+$ git status
+The above command checks the status of the remote repo.
+
+$ git pull origin <Branch_name> 
+This command downloads code from remote repo to local repo.
+
+$ git pull origin main
+The above command pulls(downloads) the files from the server (remote) to the local repo. Only the files which are not updated are pulled.
+
+
+STEPS TO CREATE A PERSONAL ACCESS TOKEN(PAT)
+
+1: on top right most corner click on profile icon
+2: In the options, click on settings.
+3: In the new window, Scroll down a bit and click on developer settings.
+4: On the left top corner click on personal access token and select tokens classic
+5: In the new window, Click the button generate token and generate tokens classic.
+6: In the window, Add the relevant note //was created during mca
+7: Click expiry and Select No Expiry.
+8: Select the checkbox repo.
+9: Scroll down fully and click generate token.
+10: Copy the token and mail it to yourself. 
+11: DO NOT Save the PAT.
+
+Note: To do operations on our repo from a specific computer that git should recognize our git account on the system.
+
+
+TO acheive this we have to run the following two commands.
+
+ $ git config --global user.name "kirankumargsonline"  
+ $ git config --global user.email "miniprogramsonline@gmail.com" 
+
+COMMAND TO SYNC OUR LOCAL REPO WITH REMOTE REPO
+
+$ git clone https://PAT@ github.com/kirankumargsonline/pfile_fe_mar25
+
+
+
+
+
+
+
+
+
+
+
+
+
