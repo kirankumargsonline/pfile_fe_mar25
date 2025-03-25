@@ -3,3 +3,8 @@
   display: block;
   margin: 0 auto;
 }
+
+.login_form{
+  display: flex;
+  justify-content: center;
+}

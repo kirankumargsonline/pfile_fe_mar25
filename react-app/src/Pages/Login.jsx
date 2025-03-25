@@ -1,22 +1,11 @@
 
+import '../App.css'
+
 function Login() {
 
     return (
         <>
-            {/* <div className="nav-container">
-                <div className="container">
-
-                    <div className="logo">Doc</div>
-
-                    <div className="nav-menu">
-
-                        <button>About</button>
-                        <button>Contact</button>
-                    </div>
-
-
-                </div>
-            </div> */}
+ 
 
 
             <header>
