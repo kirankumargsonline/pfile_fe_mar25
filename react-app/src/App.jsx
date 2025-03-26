@@ -9,15 +9,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/marquee" element={<Marquee />} />
+          <Route path="/marquee" element={<Marquee msg="Hi, This is admin" />} />
         </Routes>
       </BrowserRouter>
-
     </>
   )
 }
