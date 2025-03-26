@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
+
 export default function Footer() {
 
 
   return (
     <footer className="text-center text-lg-start bg-body-tertiary text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+        <div className="me-5 d-none d-lg-block container">
         </div>
         <div>
           <a href="#" className="me-4 text-reset">
@@ -42,22 +44,21 @@ export default function Footer() {
             </div>
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
-                Products
+                Useful Links
               </h6>
+
               <p>
-                <a href="#" className="text-reset">Angular</a>
+                <Link className="nav-link" to="/">Home</Link>
               </p>
               <p>
-                <a href="#" className="text-reset">React</a>
+                <Link className="nav-link" to="/about">About</Link>
               </p>
               <p>
-                <a href="#" className="text-reset">Vue</a>
+                <Link className="nav-link" to="/marquee">Marquee</Link>
               </p>
-              <p>
-                <a href="#" className="text-reset">Laravel</a>
-              </p>
+
             </div>
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            {/* <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 Useful links
               </h6>
@@ -73,7 +74,7 @@ export default function Footer() {
               <p>
                 <a href="#" className="text-reset">Help</a>
               </p>
-            </div>
+            </div> */}
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p><i className="fas fa-home me-3" /> New York, NY 10012, US</p>

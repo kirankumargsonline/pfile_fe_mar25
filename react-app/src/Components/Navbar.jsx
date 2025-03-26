@@ -1,23 +1,50 @@
 
+import { Link } from 'react-router-dom'
 import './login.css'
 
 function Navbar() {
 
     return (
+      <div className='container'>
+
+<nav id="navbar-example2" className="navbar navbar-light bg-light px-3">
+    <a className="navbar-brand" href="/">Navbar</a>
+    <ul className="nav nav-pills">
+      <li className="nav-item">
+      <Link className="nav-link" to="/">Home</Link>
+
+      </li>
+      <li className="nav-item">
+      <Link className="nav-link" to="/about">About</Link>
+      </li>
+      <li className="nav-item">
+      <Link className="nav-link" to="/login">login</Link>
+      </li>
+      <li className="nav-item">
+      <Link className="nav-link" to="/marquee">Marquee</Link>
+      </li>
+ 
+    </ul>
+  </nav>
+
+  
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Navbar</a>
+  {/* <a className="navbar-brand" href="#">Navbar</a> */}
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon">
     </span></button>
 
-    <ul className="navbar-nav mr-auto">
+    {/* <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+        <Link className="nav-link" to="/">Home</Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#">Link</a>
+
+        <Link className="nav-link" to="/about">About</Link>
+        <Link className="nav-link" to="/login">login</Link>
       </li>
-      </ul>
+      </ul> */}
   {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
@@ -47,6 +74,8 @@ function Navbar() {
     </form>
   </div> */}
 </nav>
+</div>
+
 )
 
 

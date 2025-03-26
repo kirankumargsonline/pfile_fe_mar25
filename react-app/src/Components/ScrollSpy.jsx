@@ -1,13 +1,21 @@
-
+import { Link } from 'react-router';
+import '../index.css'
 function ScrollSPY(){
 
     return(
-     <div>
+
+      <ul className="list-group ">
+
+     <div className="container">
   <nav id="navbar-example2" className="navbar navbar-light bg-light px-3">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">ScrollSpy</a>
     <ul className="nav nav-pills">
       <li className="nav-item">
-        <a className="nav-link" href="#scrollspyHeading1">About Me</a>
+        <Link className="nav-link" to="/about">
+        {/* <a className="nav-link" href="#scrollspyHeading1"> */}
+          About Me
+          {/* </a> */}
+        </Link>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#scrollspyHeading2">Qualification</a>
@@ -54,6 +62,7 @@ function ScrollSPY(){
     </p>
   </div>
 </div>
+</ul>
 
     )
 }
